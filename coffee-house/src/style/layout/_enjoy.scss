@@ -1,0 +1,36 @@
+.enjoy {
+  border-radius: 2.5rem;
+  background-image: url(./../assets/img/img-hero.png);
+  background-position: center;
+  background-size: cover;
+
+  width: 100%;
+  height: 40.25rem;
+
+  .enjoy__content {
+    width: 33.125rem;
+    height: 27.75rem;
+
+    padding-top: 6.25rem;
+    margin-left: 6.25rem;
+
+    .enjoy__content-title {
+      @include heading-1;
+      color: $text-light;
+      letter-spacing: 0.0375rem;
+      margin-bottom: 2.5rem;
+
+      span {
+        @include heading-1-accent;
+        color: $text-accent
+      }
+    }
+
+    p {
+      @include body-medium;
+      color: $text-light;
+      letter-spacing: -0.0051rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+.favorite {
+
+  .favorite__content-slider {
+
+    .slider-btn {
+      cursor: pointer;
+      transition: all .3s ease;
+
+      svg {
+        transition: all .3s ease;
+
+        path {
+          transition: all .3s ease;
+        }
+      }
+    }
+  }
+}
+
+@media (hover:hover) {
+
+  .slider-btn:hover {
+
+    svg {
+      fill: $background-container;
+
+      path {
+        stroke: $text-light;
+      }
+    }
+  }
+
+  .slider__btn-right:hover {
+
+    transform: translateY(-5%);
+  }
+
+  .slider__btn-left:hover {
+
+    transform: translateY(5%);
+  }
+}
+
+.slider__btn-right:active {
+
+  transform: translateY(0);
+}
+
+.slider__btn-left:active {
+
+  transform: translateY(0);
+}

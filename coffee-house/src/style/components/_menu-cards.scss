@@ -1,0 +1,84 @@
+.menu {
+  .menu__content-menu {
+    display: grid;
+    grid-template-columns: repeat(4, 310px);
+    gap: 40px;
+
+    .menu__card {
+      min-height: 100%;
+      max-width: 310px;
+      border: 1px solid $border-light;
+      border-radius: 40px;
+      cursor: pointer;
+      position: relative;
+
+      .menu__card-image {
+        position: relative;
+        overflow: hidden;
+        width: 310px;
+        height: 310px;
+        border-radius: 40px;
+        object-fit: cover;
+
+        img {
+          position: absolute;
+          max-width: 100%;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) scale(1.1);
+          transition: transform .4s ease;
+        }
+      }
+
+      .menu__card-description {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 51px;
+      }
+
+      .menu__card-title {
+        margin-bottom: 10px;
+
+        h3 {
+          @include heading-3;
+          color: $text-dark;
+        }
+      }
+
+      .menu__card-subtitle {
+        margin-bottom: 10px;
+
+        p {
+          @include body-medium;
+          color: $text-dark;
+          letter-spacing: -0.01rem;
+        }
+      }
+
+      .menu__card-price {
+        position: absolute;
+        bottom: 20px;
+        p {
+          @include heading-3;
+          color: $text-dark;
+        }
+      }
+    }
+  }
+}
+
+@media (hover:hover) {
+  .menu {
+    .menu__content-menu {
+      .menu__card:hover {
+
+        img {
+          transform: translate(-50%, -50%) scale(1);
+        }
+      }
+    }
+  }
+}

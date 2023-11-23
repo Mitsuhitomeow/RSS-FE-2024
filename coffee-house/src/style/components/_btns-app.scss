@@ -1,0 +1,94 @@
+.mobile-app {
+
+  .mobile-app__description-buttons {
+    display: flex;
+
+    .apple__download-btn {
+      margin-right: 20px;
+
+      .mobile-app__btn {
+
+        svg {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .button {
+
+      cursor: pointer;
+      background: $background-body;
+      border: 1px solid $border-dark;
+      border-radius: 100px;
+      width: 200px;
+      transition: all .5s ease;
+
+      .mobile-app__btn {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-left: 20px;
+
+          path {
+            transition: all .5s ease;
+          }
+        }
+
+        .mobile-app__btn-text {
+
+          margin: 12px 0 12px 8px;
+
+          p {
+            @include body-caption;
+            color: $text-dark;
+            text-align: start;
+            letter-spacing: -0.005rem;
+            transition: all .5s ease;
+          }
+
+          p:last-child {
+            @include link-button;
+            color: $text-dark;
+            transition: all .5s ease;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+@media (hover:hover) {
+  .mobile-app {
+
+    .button:hover {
+      background: $background-container;
+      transition: all .5s ease;
+
+      .mobile-app__btn {
+
+        svg {
+
+          path {
+            fill: $text-light;
+            transition: all .5s ease;
+          }
+        }
+
+        .mobile-app__btn-text {
+
+          p {
+            color: $text-light;
+            transition: all .5s ease;
+          }
+
+          p:last-child {
+            color: $text-light;
+            transition: all .5s ease;
+          }
+        }
+      }
+    }
+  }
+}

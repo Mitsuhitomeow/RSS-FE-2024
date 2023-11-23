@@ -1,0 +1,86 @@
+.footer {
+  .footer__content {
+    .footer__content-left {
+      .footer__content-web {
+        .footer__web-twitter {
+          margin-right: 12px;
+
+          svg {
+            transition: all .5s ease;
+
+            path {
+              transition: all .1s ease;
+            }
+          }
+        }
+
+        .footer__web-instagram {
+          margin-right: 12px;
+
+          svg {
+            transition: all .5s ease;
+
+            path {
+              transition: all .1s ease;
+            }
+          }
+        }
+
+        .footer__web-facebook {
+          svg {
+            transition: all .5s ease;
+
+            path {
+              transition: all .1s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (hover:hover) {
+  .footer {
+    .footer__content {
+      .footer__content-left {
+        .footer__content-web {
+          .footer__web-twitter {
+
+            a:hover {
+              svg {
+                fill: $background-body;
+              }
+
+              path {
+                stroke: $text-dark;
+              }
+            }
+          }
+
+          .footer__web-instagram:hover {
+            svg {
+              fill: $background-body;
+            }
+
+            path {
+              stroke: $text-dark;
+            }
+          }
+
+
+
+          .footer__web-facebook:hover {
+            svg {
+              fill: $background-body;
+            }
+
+            path {
+              stroke: $text-dark;
+            }
+          }
+        }
+      }
+    }
+  }
+}

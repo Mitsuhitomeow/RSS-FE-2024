@@ -1,0 +1,46 @@
+.footer {
+  background: $background-container;
+  border-radius: 40px;
+
+  .footer__content {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+
+    .footer__content-left {
+      max-width: 530px;
+      width: 100%;
+      margin-right: 100px;
+
+      .footer__content-title {
+        margin-bottom: 40px;
+
+        h2 {
+          @include heading-2;
+          color: $text-light;
+          letter-spacing: 0.02rem;
+          span {
+            @include heading-2-accent;
+            color: $text-accent;
+          }
+        }
+      }
+
+      .footer__content-web {
+        display: flex;
+      }
+    }
+
+    .footer__content-right {
+
+      .footer__contacts-title {
+        margin-bottom: 40px;
+
+        h3 {
+          @include heading-3;
+          color: $text-light;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.mobile-app {
+  margin-top: 98px;
+  margin-bottom: 98px;
+
+  .mobile-app__content {
+    display: flex;
+    justify-content: space-between;
+
+    .mobile-app__content-description {
+      max-width: 630px;
+      margin-top: 144px;
+
+      .mobile-app__description-title {
+        text-align: start;
+        letter-spacing: 0.02rem;
+
+        h2 {
+          @include heading-2;
+          color: $text-dark;
+
+          span {
+            @include heading-2-accent;
+            color: $text-accent;
+          }
+        }
+      }
+
+      .mobile-app__description-subtitle {
+
+        p {
+          @include body-medium;
+          color: $text-dark;
+          margin-top: 40px;
+          margin-bottom: 40px;
+          letter-spacing: -0.005rem;
+        }
+      }
+    }
+  }
+}
