@@ -64,7 +64,7 @@
 
     .button:hover {
       background: $background-container;
-      transition: all .5s ease;
+      transition: all .5s ease-out;
 
       .mobile-app__btn {
 
@@ -90,5 +90,11 @@
         }
       }
     }
+  }
+}
+
+.mobile-app {
+  .button:active {
+    transform: translateY(15%);
   }
 }

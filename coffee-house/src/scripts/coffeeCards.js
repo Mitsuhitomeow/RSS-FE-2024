@@ -26,7 +26,7 @@ export function showCard(data) {
 
   for (let i = 0; i < Math.min(arrCoffee.length); i += 1) {
     coffeeCards[i].image = arrCoffee[i]
-  }
+  };
 
   coffeeCards.forEach(element => {
     const menuCard = document.createElement('div');
@@ -51,7 +51,7 @@ export function showCard(data) {
           </div>
         </div>
       </div>
-    `
+    `;
 
     card.appendChild(menuCard);
   });
