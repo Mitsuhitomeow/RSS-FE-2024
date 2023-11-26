@@ -20,6 +20,7 @@
       cursor: pointer;
 
       span {
+        color: $text-dark;
         transform: translateX(29%);
         transition: all .5s ease;
       }
