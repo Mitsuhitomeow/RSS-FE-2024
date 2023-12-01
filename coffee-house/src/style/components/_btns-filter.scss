@@ -70,6 +70,10 @@
             color: $text-light;
           }
         }
+
+        .filter__btn-active:hover {
+          cursor: default;
+        }
       }
     }
   }

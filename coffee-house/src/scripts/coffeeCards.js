@@ -29,7 +29,7 @@ export function showCard(data) {
 
   for (let i = 0; i < Math.min(arrCoffee.length); i += 1) {
     coffeeCards[i].image = arrCoffee[i]
-  }
+  };
 
   const maxVisibleCards =
     SCREEN_WIDTH <= 1425 && SCREEN_WIDTH >= 1050

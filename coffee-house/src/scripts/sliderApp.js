@@ -29,7 +29,7 @@ const slider = document.querySelector('.slider__content');
 export const showImage = (data) => {
 
   const coffee = data.favorite
-  console.log(coffee[0])
+  // console.log(coffee[0])
 
   coffee[0].image = slide1;
   coffee[1].image = slide2;
