@@ -24,7 +24,7 @@
 }
 
 .animate__load {
-  animation: line-load 3s linear forwards;
+  animation: line-load 5s linear forwards;
 }
 
 @keyframes line-load {
@@ -34,9 +34,9 @@
   15% {
     width: 0;
   };
-  80% {
+  85% {
     width: 100%;
-  }
+  };
   100% {
     width: 0;
   }
