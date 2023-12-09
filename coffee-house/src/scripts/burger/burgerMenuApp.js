@@ -3,6 +3,7 @@ const NAV_MENU = document.querySelector('.header__nav');
 const MENU_LINK = document.querySelector('.header__menu-link');
 const LINK = document.querySelectorAll('li');
 
+// закрытие бургера по свайпу на mobile вправо
 const touchCloseBurger = () => {
   let startX = 0;
   let endX = 0;
@@ -28,9 +29,11 @@ const touchCloseBurger = () => {
   })
 }
 
+// открытие закрытие бургера
 export const btnBurgerMenu = () => {
 
   BTN_BURGER.addEventListener('click', () => {
+    BTN_BURGER.classList.toggle('burger-active')
     NAV_MENU.classList.toggle('open');
     MENU_LINK.classList.toggle('open')
     document.body.classList.toggle('_lock');
