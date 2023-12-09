@@ -3,7 +3,7 @@ import { controlPanel } from "./sliderControlsPanel";
 
 const SLIDER_CONTAINER = document.querySelector('.slider__content');
 
-export function swiperLeft(data) {
+export const swiperLeft = (data) => {
   const coffee = data.favorite;
   if (coffee[1].id === 1) {
 
@@ -59,7 +59,7 @@ export function swiperLeft(data) {
   }
 };
 
-export function swiperRight(data) {
+export const swiperRight = (data) => {
   const coffee = data.favorite;
   if (coffee[1].id === 3) {
 

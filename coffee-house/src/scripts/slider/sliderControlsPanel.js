@@ -1,4 +1,4 @@
-export function controlPanel (data) {
+export const controlPanel = (data) => {
   const CONTROLS = document.querySelectorAll('.load');
   const coffee = data.favorite;
   const id = coffee[1].id;

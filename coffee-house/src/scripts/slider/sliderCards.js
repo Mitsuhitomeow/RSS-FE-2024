@@ -1,6 +1,6 @@
 const SLIDER_CONTAINER = document.querySelector('.slider__content');
 
-export function createCards(data) {
+export const createCards = (data) => {
 
   data.favorite.forEach(coffee => {
     const div = document.createElement('div');

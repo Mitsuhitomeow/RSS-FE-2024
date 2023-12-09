@@ -1,7 +1,7 @@
 import { swiperLeft, swiperRight } from "./sliderFunctions";
 const TIME_SWIPE = document.querySelectorAll('.load');
 
-export function touchEvents(slide, data) {
+export const touchEvents = (slide, data) => {
   let startX, startY;
 
   slide.addEventListener('mousedown', moveStart);

@@ -8,6 +8,7 @@ import { downloadGooglePlay } from './scripts/btn/downloadGooglePlay';
 import { btnBurgerMenu } from './scripts/burger/burgerMenuApp';
 
 showLoader()
+console.log('test')
 
 async function fetchData() {
   try {
