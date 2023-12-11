@@ -44,7 +44,7 @@
     .header__nav {
       position: fixed;
       transform: translateX(100%);
-      top: 0;
+      top: 100px;
       width: 100%;
       background: $background-body;
       height: 1000%;
@@ -82,7 +82,7 @@
       width: 100%;
       display: flex;
       justify-content: center;
-      padding-top: 8.3rem;
+      padding-top: 2rem;
       text-align: center;
 
       ul {

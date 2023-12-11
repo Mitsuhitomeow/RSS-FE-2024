@@ -36,6 +36,10 @@ export const touchEvents = (slide, data) => {
       moveX > 0 ? swiperLeft(data) : swiperRight(data);
     }
 
+    if (Math.abs(moveY) > Math.abs(moveX)) {
+      moveY > 50 ? window.scrollBy(0, -300) : window.scrollBy(0, 300);
+    }
+
     document.removeEventListener('mousemove', slideMove);
     document.removeEventListener('touchmove', slideMove);
     document.removeEventListener('mouseup', moveEnd);

@@ -40,12 +40,14 @@ export const btnBurgerMenu = () => {
   })
 
   MENU_LINK.addEventListener('click', () => {
+    BTN_BURGER.classList.remove('burger-active')
     document.body.classList.remove('_lock');
     NAV_MENU.classList.remove('open');
     MENU_LINK.classList.remove('open');
   })
 
   LINK.forEach(link => link.addEventListener('click', () => {
+    BTN_BURGER.classList.remove('burger-active')
     document.body.classList.remove('_lock');
     NAV_MENU.classList.remove('open');
     MENU_LINK.classList.remove('open');
