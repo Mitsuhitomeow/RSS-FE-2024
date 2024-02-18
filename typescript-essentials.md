@@ -8,6 +8,7 @@ Here is a collection of badges I earned from completing Microsoft Learn's TypeSc
 2. **Declare Variable Types in TypeScript**: [Badge](https://learn.microsoft.com/api/achievements/share/en-gb/MelnikovAlexey-3052/UF5HUM43?sharingId=C4777D89382D1FFA)
 3. **Implement Interfaces in TypeScript**: [Badge](https://learn.microsoft.com/api/achievements/share/en-gb/MelnikovAlexey-3052/WAC78WSN?sharingId=C4777D89382D1FFA)
 4. **Develop Typed Functions in TypeScript**: [Badge](https://learn.microsoft.com/api/achievements/share/ru-ru/MelnikovAlexey-3052/24X6Z93V?sharingId=C4777D89382D1FFA)
+5. **Declare and Instantiate Classes in TypeScript**: [Badge](https://learn.microsoft.com/api/achievements/share/ru-ru/MelnikovAlexey-3052/HYGBDZ48?sharingId=C4777D89382D1FFA)
 
 ## Reflections
 
@@ -18,3 +19,5 @@ Here is a collection of badges I earned from completing Microsoft Learn's TypeSc
 3. Expanded my understanding of interfaces in TypeScript and type aliases, mastered declaring and extending interfaces. Additionally, learned how to create indexed types, their structure, and how to use them to describe APIs. Solidified my knowledge through engaging exercises on interface usage provided by the module. At this point, I have nothing more to add except that the module aided me in gaining a deeper comprehension of interfaces.
 
 4. In this module, I learned how to create various functions in TypeScript, type parameters, and return values of functions. I learned how to assign types to both required and optional parameters, whether they are arrays or objects. Practice helped me better understand how to assign types to required, optional, and default parameters. I also explored ways to define function types using type aliases and interfaces and understood their purpose. Finally, as always, it concluded with an interesting task to reinforce my knowledge, which helped me better understand how to write functions in TypeScript.
+
+5. In the fifth module, I learned the fundamentals of declaring classes, assigning types to class arguments, understanding the concept of class instances, and utilizing access modifiers such as private, protected, and static. Additionally, I explored class extension through the use of extends, enabling the creation of class hierarchies, as well as defining interfaces for classes to make code more flexible and structured. At the end of the module, tasks were provided to reinforce the material, and I saw firsthand how functions from previous modules could be transformed into class methods, enhancing my understanding of object-oriented programming principles in practice.
