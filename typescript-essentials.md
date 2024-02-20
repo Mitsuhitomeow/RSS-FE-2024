@@ -11,6 +11,7 @@ Here is a collection of badges I earned from completing Microsoft Learn's TypeSc
 5. **Declare and Instantiate Classes in TypeScript**: [Badge](https://learn.microsoft.com/api/achievements/share/ru-ru/MelnikovAlexey-3052/HYGBDZ48?sharingId=C4777D89382D1FFA)
 6. **Generics in TypeScript**: [Badge](https://learn.microsoft.com/api/achievements/share/ru-ru/MelnikovAlexey-3052/CWTJW5F9?sharingId=C4777D89382D1FFA)
 7. **Work with External Libraries in TypeScript**: [Badge](https://learn.microsoft.com/api/achievements/share/ru-ru/MelnikovAlexey-3052/X23N74HY?sharingId=C4777D89382D1FFA)
+8. **Organize Code with Namespaces in TypeScript**: [Badge](https://learn.microsoft.com/api/achievements/share/en-gb/MelnikovAlexey-3052/UF5CG773?sharingId=C4777D89382D1FFA)
 
 ## Reflections
 
@@ -27,3 +28,5 @@ Here is a collection of badges I earned from completing Microsoft Learn's TypeSc
 6. I got acquainted with universal templates, found out what they are needed for and in what cases, and also talked about various ways to use them. They showed how to declare universal templates in functions, interfaces, and classes. And, as always, in the end, the task is to consolidate knowledge.
 
 7. This module, in essence, didn't provide me with anything new in terms of knowledge. I was already familiar with exports and imports, except for compiling `tsc --module` into `es6` or `commonjs`. What was new for me was the type library, as well as working with `.env` and `dotenv`, although the topic hasn't been fully explored yet. It is mentioned that `.env` contains certain project environments. Also, as always, there was a task where files needed to be imported in such a way that the end result was a fully functional output of functions.
+
+8. I learned about namespaces and how they help to organize code, including single-file and multi-file namespaces. Solving the problem provided an opportunity to strengthen my understanding of the material.
