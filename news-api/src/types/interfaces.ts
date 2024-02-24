@@ -10,7 +10,7 @@ export interface ArrSource {
 
 export interface SourceTypes extends ArrSource {
     status: string;
-    source: ArrSource[];
+    sources: ArrSource[];
 }
 
 export interface Article {
