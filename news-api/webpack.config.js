@@ -16,12 +16,12 @@ const baseConfig = {
             },
             {
                 test: /\.ts$/i,
-                use: 'ts-loader'
+                use: 'ts-loader',
             },
         ],
     },
     resolve: {
-        extensions: ['.ts','.js'],
+        extensions: ['.ts', '.js'],
     },
     output: {
         filename: 'index.js',
@@ -34,13 +34,13 @@ const baseConfig = {
             filename: 'index.html',
         }),
         new CleanWebpackPlugin(),
-        new EslingPlugin({ extensions: 'ts' })
+        new EslingPlugin({ extensions: 'ts' }),
     ],
 };
 
 module.exports = ({ mode }) => {
     const isProductionMode = mode === 'prod';
-    const envConfig = isProductionMode ? require('./webpack.prod.config') : require('./webpack.dev.config');
+    const envConfig = isProductionMode ? require('./webpack.prod.config.js') : require('./webpack.dev.config.js');
 
     return merge(baseConfig, envConfig);
 };
