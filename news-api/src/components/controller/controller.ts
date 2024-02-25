@@ -1,8 +1,8 @@
-import { LoadCallBack } from '../../types/types';
+import { CallbackResp } from '../../types/types';
 import AppLoader from './appLoader';
 
 class AppController extends AppLoader {
-    getSources<T>(callback: LoadCallBack<T>) {
+    getSources<T>(callback: CallbackResp<T>): void {
         super.getResp(
             {
                 endpoint: 'sources',
@@ -11,15 +11,11 @@ class AppController extends AppLoader {
         );
     }
 
-    getNews<T>(e: Event, callback: LoadCallBack<T>) {
+    getNews<T>(e: Event, callback: CallbackResp<T>): void {
         let target = e.target;
         const newsContainer = e.currentTarget;
 
-        while (
-            target !== newsContainer &&
-            target instanceof HTMLElement &&
-            newsContainer instanceof HTMLElement
-        ) {
+        while (target !== newsContainer && target instanceof HTMLElement && newsContainer instanceof HTMLElement) {
             if (target.classList.contains('source__item')) {
                 const sourceId = target.getAttribute('data-source-id');
                 if (newsContainer.getAttribute('data-source') !== sourceId && sourceId !== null) {
