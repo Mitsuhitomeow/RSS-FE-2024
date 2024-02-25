@@ -1,9 +1,7 @@
 export type RespEndpoint = 'sources' | 'everything';
 
 export type RespOption = {
-    options?: {
-        sources?: string;
-    };
+    sources?: string;
 };
 
 export type LoadCallBack<T> = (data?: T) => void;
