@@ -20,35 +20,46 @@ main {
 }
 
 footer {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
     padding: 10px 0;
 }
+
 footer .footer__content {
     margin: 20px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
+
 footer .copyright {
     font-size: 14px;
     color: #333;
 }
+
 footer .copyright a {
     color: #444;
 }
+
 footer .copyright:before {
     content: '©';
+}
+
+.content__logo-git,
+.content__logo-rss {
+    transition: all .3s ease;
 }
 
 @media (hover:hover) {
     footer .copyright a:hover {
         color: #555;
+    }
+
+    .content__logo-git:hover,
+    .content__logo-rss:hover {
+        transform: translateY(-10px);
+        transition: all .3s ease;
     }
 }
