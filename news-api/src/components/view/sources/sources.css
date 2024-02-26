@@ -55,4 +55,22 @@
 
         transform: translateY(-0.25em);
     }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color:  #f1ce03;
+    }
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    background-color: #8d00c5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #a0a300;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #9103e4;
+  }
