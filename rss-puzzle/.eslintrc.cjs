@@ -4,20 +4,22 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 2018,
     sourceType: 'module',
+    project: './tsconfig.json',
   },
-  plugins: ['@typescript-eslint', 'unused-imports', 'simple-import-sort', 'prettier', 'unicorn'],
+  plugins: ['@typescript-eslint', 'unused-imports', 'prettier'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
+    'eslint-config-prettier',
+    'airbnb-base',
+    'airbnb-typescript/base',
   ],
   overrides: [
     {
       files: ['*.ts'],
       rules: {
-        'simple-import-sort/imports': 'error',
-        'simple-import-sort/exports': 'error',
         'unused-imports/no-unused-imports': 'warn',
         '@typescript-eslint/explicit-member-accessibility': [
           'error',
