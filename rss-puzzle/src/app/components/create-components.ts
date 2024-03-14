@@ -3,7 +3,7 @@ export default class Component<T extends HTMLElement = HTMLElement> {
 
   protected node: T;
 
-  constructor({ tag = 'div', className = '', text = '' }, ...children: []) {
+  constructor({ tag = 'div', className = '', text = '' }, ...children: Component[]) {
     const node = document.createElement(tag) as T;
     node.className = className;
     node.textContent = text;
