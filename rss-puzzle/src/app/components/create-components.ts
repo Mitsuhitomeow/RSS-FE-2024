@@ -1,5 +1,6 @@
 export default class Component<T extends HTMLElement = HTMLElement> {
   protected children: Component[] = [];
+
   protected node: T;
 
   constructor({ tag = 'div', className = '', text = '' }, ...children: []) {

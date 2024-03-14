@@ -1,7 +1,12 @@
 export default class App {
+  private element;
+
+  constructor() {
+    this.element = document.createElement('h1');
+  }
+
   public start(): void {
-    const element = document.createElement('h1');
-    element.textContent = 'Hello World!!';
-    document.body.appendChild(element);
+    this.element.textContent = 'Hello World!!';
+    document.body.appendChild(this.element);
   }
 }
