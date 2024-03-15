@@ -3,9 +3,7 @@ import Component from '../../../components/create-components';
 import { InputFirstName, InputLastName } from '../../../components/inputs/input';
 import styles from './form.module.scss';
 
-function btnLogInClick() {
-  console.log('asd')
-}
+function btnLogInClick() {}
 
 const Form = new Component(
   {
