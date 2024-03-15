@@ -43,6 +43,12 @@ module.exports = {
             endOfLine: 'lf',
           },
         ],
+        'object-curly-newline': [
+          'error',
+          {
+            consistent: true
+          }
+        ],
         '@typescript-eslint/consistent-type-imports': 'error',
       },
     },
