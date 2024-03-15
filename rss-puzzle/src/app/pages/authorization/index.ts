@@ -1,6 +1,6 @@
 import styles from './auth.module.scss';
 import Component from '../../components/create-components';
-import Form from '../../components/form/form-auth';
+import Form from './registration-form/form-auth';
 
 interface AuthProps {
   className: string;

@@ -1,9 +1,11 @@
-import ButtonComponent from '../button/button';
-import Component from '../create-components';
-import { InputFirstName, InputLastName } from '../inputs/input';
+import ButtonComponent from '../../../components/button/button';
+import Component from '../../../components/create-components';
+import { InputFirstName, InputLastName } from '../../../components/inputs/input';
 import styles from './form.module.scss';
 
-function btnLogInClick() {}
+function btnLogInClick() {
+  console.log('asd')
+}
 
 const Form = new Component(
   {
@@ -17,6 +19,7 @@ const Form = new Component(
     text: 'Sign In',
     onClick: btnLogInClick,
     className: 'button__log',
+    attribute: 'button',
   }),
 );
 
