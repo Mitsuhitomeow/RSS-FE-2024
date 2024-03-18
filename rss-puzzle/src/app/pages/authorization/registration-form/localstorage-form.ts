@@ -12,13 +12,16 @@ type UserTypes = {
 export default function btnLogInClick() {
   const inputValues: string[] = [];
   const colletionNames = document.getElementsByTagName('input');
-  const regex = /^[A-Z][a-z]{2,}$/;
+  const regexInputFirst = /^[A-Z][a-z]{2,}$/;
+  const regexInputLast = /^[A-Z][a-z]{3,}$/;
 
   for (let i = 0; i < colletionNames.length; i += 1) {
     inputValues.push(colletionNames[i].value);
   }
 
-  if (!(regex.test(inputValues[0].trim()) && regex.test(inputValues[1].trim()))) {
+  if (
+    !(regexInputFirst.test(inputValues[0].trim()) && regexInputLast.test(inputValues[1].trim()))
+  ) {
     showError();
     return;
   }

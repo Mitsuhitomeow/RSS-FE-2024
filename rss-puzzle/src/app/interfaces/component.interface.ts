@@ -2,6 +2,9 @@ export interface InputProps {
   types?: string;
   placeholder: string;
   className: string;
+  minLength: string;
+  pattern: string;
+  required?: string;
 }
 
 export interface ButtonProps {
