@@ -1,33 +1,33 @@
+import styles from './errors-validation.module.scss';
 import Component from '../../../utils/create-components';
 import ImageComponent from '../../../utils/create-images';
-
-type StateProps = 'active' | 'disabled';
+import errorIcon from '../../../../assets/errorIcon.svg';
 
 interface ErrorsProps {
-  state: StateProps;
   dataErrors: string;
 }
 
-export default function ErrorValidation({ state, dataErrors }: ErrorsProps) {
+export default function ErrorValidation({ dataErrors }: ErrorsProps) {
   return new Component(
     {
       tag: 'div',
-      className: `error_container ${state}`,
+      className: `error_form disabled ${styles.error__container}`,
     },
-    new Component({
-      tag: 'img',
-      className: 'error__img-icon',
-    }),
+    new Component(
+      {
+        tag: 'div',
+        className: `${styles.error__icon_container}`,
+      },
+      new ImageComponent({
+        className: `${styles.error__icon}`,
+        src: errorIcon,
+        alt: 'Error icon',
+      }),
+    ),
     new Component({
       tag: 'p',
-      className: 'error__img',
+      className: `${styles.error__text}`,
       text: dataErrors,
-    }),
-    new ImageComponent({
-      className: 'error__img-disabled',
-      src: '',
-      alt: '',
-      callback: null,
     }),
   );
 }

@@ -30,12 +30,10 @@ const AuthPage = new Authorization({
 
     /**
      * Функция для отображения ошибки валидации.
-     * @params state: 'active' | 'disabled' - вкл/выкл отображения ошибки.
      * @params dataErrors: 'string' - текст ошибки.
      */
     ErrorValidation({
-      state: 'active',
-      dataErrors: 'Errors: ...',
+      dataErrors: 'Error: field is empty...',
     }),
   ),
 });

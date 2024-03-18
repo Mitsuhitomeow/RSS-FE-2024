@@ -1,4 +1,5 @@
 import { localStorageService } from '../../../services/local-storage.service';
+import showError from '../errors-validation/show-error-component';
 
 type UserTypes = {
   id: number;
@@ -17,7 +18,8 @@ export default function btnLogInClick() {
     inputValues.push(colletionNames[i].value);
   }
 
-  if (!(regex.test(inputValues[0]) && regex.test(inputValues[1]))) {
+  if (!(regex.test(inputValues[0].trim()) && regex.test(inputValues[1].trim()))) {
+    showError();
     return;
   }
 
