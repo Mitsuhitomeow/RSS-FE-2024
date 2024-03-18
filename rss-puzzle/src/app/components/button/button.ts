@@ -1,6 +1,6 @@
 import styles from './button.module.scss';
-import Button from '../create-buttons';
-import type { ButtonProps } from '../../interfaces/form.interface';
+import Button from '../../utils/create-buttons';
+import type { ButtonProps } from '../../interfaces/component.interface';
 
 export default function ButtonComponent({ text, onClick, className, attribute }: ButtonProps) {
   return new Button({

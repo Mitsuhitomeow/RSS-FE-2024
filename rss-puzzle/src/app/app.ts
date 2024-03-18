@@ -1,4 +1,4 @@
-import AuthPage from './pages/authorization';
+import AuthPage from './pages/authorization/auth-page';
 
 export default class App {
   private authPage;

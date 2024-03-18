@@ -1,4 +1,4 @@
-import InputComponent from '../create-inputs';
+import InputComponent from '../../utils/create-inputs';
 import styles from './input.module.scss';
 
 export const InputFirstName = new InputComponent({
