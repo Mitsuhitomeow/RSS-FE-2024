@@ -1,9 +1,8 @@
 import ButtonComponent from '../../../components/button/button';
-import Component from '../../../components/create-components';
+import Component from '../../../utils/create-components';
 import { InputFirstName, InputLastName } from '../../../components/inputs/input';
 import styles from './form.module.scss';
-
-function btnLogInClick() {}
+import btnLogInClick from './localstorage-form';
 
 const Form = new Component(
   {
@@ -14,7 +13,7 @@ const Form = new Component(
   InputFirstName,
   InputLastName,
   ButtonComponent({
-    text: 'Sign In',
+    text: 'Login',
     onClick: btnLogInClick,
     className: 'button__log',
     attribute: 'button',
