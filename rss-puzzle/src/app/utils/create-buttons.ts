@@ -1,5 +1,5 @@
 import Component from './create-components';
-import type { ButtonProps } from '../interfaces/form.interface';
+import type { ButtonProps } from '../interfaces/component.interface';
 
 export default class Button extends Component {
   protected onClick!: () => void;

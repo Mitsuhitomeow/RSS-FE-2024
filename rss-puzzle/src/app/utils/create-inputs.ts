@@ -1,4 +1,4 @@
-import type { InputProps } from '../interfaces/form.interface';
+import type { InputProps } from '../interfaces/component.interface';
 import Component from './create-components';
 
 export default class InputComponent extends Component {
