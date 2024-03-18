@@ -10,3 +10,10 @@ export interface ButtonProps {
   className?: string;
   attribute?: string;
 }
+
+export interface ImageProps {
+  className: string;
+  src: string;
+  alt?: string;
+  callback?: (() => void) | null;
+}
