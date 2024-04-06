@@ -1,0 +1,29 @@
+.form-register {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(56, 56, 56);
+  padding: 30px;
+  border-radius: 10px;
+
+  width: 350px;
+  margin: 0 auto;
+
+  .form-btn {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+    background-color: #ffffff;
+    color: #000000;
+
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  @media (hover: hover) {
+    .form-btn:hover {
+      background-color: #9e9e9e;
+    }
+  }
+}

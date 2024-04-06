@@ -1,29 +1,16 @@
+import AuthorizationPage from './pages/auth-page';
+
 export default class App {
-  private body;
+  private body: HTMLElement;
 
-  private node: Node | null;
-
-  private greeting: Node | null;
+  private authPage: AuthorizationPage;
 
   constructor() {
     this.body = document.body;
-
-    this.node = null;
-    this.greeting = null;
-  }
-
-  private createGreetingTitle() {
-    this.greeting = document.createElement('h1');
-    this.greeting.textContent = 'hello world';
-    return this.greeting;
-  }
-
-  private getNode() {
-    this.node = this.createGreetingTitle();
-    return this.node;
+    this.authPage = new AuthorizationPage();
   }
 
   public start(): void {
-    this.body.append(this.getNode());
+    this.body.append(this.authPage.getNode());
   }
 }
