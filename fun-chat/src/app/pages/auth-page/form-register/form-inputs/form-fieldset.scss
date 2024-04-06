@@ -9,21 +9,21 @@
 
   .field {
     display: flex;
-  }
 
-  .label-log,
-  .label-pass {
-    display: block;
-    width: 30%;
-    margin-bottom: 5px;
-  }
+    .label-log,
+    .label-pass {
+      display: block;
+      width: 30%;
+      margin-bottom: 5px;
+    }
 
-  .input-log,
-  .input-pass {
-    width: 70%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    .input-log,
+    .input-pass {
+      width: 70%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
   }
 }
