@@ -3,7 +3,7 @@ import Component from '../base-component';
 interface ButtonProp {
   text: string;
   className: string;
-  callback?: () => void;
+  callback?: (e: Event) => void;
 }
 
 export default class Button extends Component {
@@ -11,7 +11,10 @@ export default class Button extends Component {
     super({ tag: 'button', className, text });
 
     if (callback) {
-      this.addListener('click', callback);
+      this.addListener('click', (e) => {
+        e.preventDefault();
+        callback(e);
+      });
     }
   }
 }

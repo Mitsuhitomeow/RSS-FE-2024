@@ -1,14 +1,18 @@
 import Component from '../../../components/base-component';
 import Button from '../../../components/button/button';
+import PopupInfo from '../../popup-info/popup-info';
 import Fieldset from './form-inputs/form-fieldset';
 import './form-register.scss';
 
 export default class FormRegister {
-  protected form: Component;
+  private form: Component;
 
-  protected fieldset: Fieldset;
+  private fieldset: Fieldset;
+
+  private popup = new PopupInfo();
 
   constructor() {
+    this.popup = new PopupInfo();
     this.fieldset = new Fieldset();
     const FieldsetComponent = this.fieldset.getFieldsetComponent();
 
@@ -25,6 +29,7 @@ export default class FormRegister {
       new Button({
         text: 'info',
         className: 'form-btn',
+        callback: () => this.popup.showPopup(),
       }),
     );
   }

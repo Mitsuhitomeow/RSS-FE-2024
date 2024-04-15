@@ -49,7 +49,7 @@ export default class Component<T extends HTMLElement = HTMLElement> {
     this.node.classList.toggle(className);
   }
 
-  public addListener(event: string, listener: () => void, options = false): void {
+  public addListener(event: string, listener: (e: Event) => void, options = false): void {
     this.node.addEventListener(event, listener, options);
   }
 
